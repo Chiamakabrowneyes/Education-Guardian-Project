@@ -73,18 +73,18 @@ Sample Prompts for Each Agent
 You only need to create one virtual environment for all examples in this course. Follow these steps to set it up:
 
 Create virtual environment in the root directory
-python -m venv .venv
+- python -m venv .venv
 
 Activate (each new terminal)
-   macOS/Linux:
+   - macOS/Linux:
    source .venv/bin/activate
-   Windows CMD:
+   - Windows CMD:
    .venv\Scripts\activate.bat
-   Windows PowerShell:
+   - Windows PowerShell:
    .venv\Scripts\Activate.ps1
 
 Install dependencies
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 Run to trigger
-adb web
+- adb web
