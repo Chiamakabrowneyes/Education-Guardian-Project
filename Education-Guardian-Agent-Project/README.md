@@ -87,4 +87,4 @@ Install dependencies
 - pip install -r requirements.txt
 
 Run to trigger
-- adb web
+- adk web
