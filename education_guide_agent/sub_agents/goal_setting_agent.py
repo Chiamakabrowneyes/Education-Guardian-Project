@@ -6,6 +6,10 @@ This module provides an agent for helping students set and track educational goa
 
 from google.adk.agents import Agent
 from ..tools.goal_setting_tool import goal_setting_tool
+import google.adk as adk
+import os
+
+adk.configure(api_key=os.getenv("api_key"))
 
 # Create the goal setting agent
 goal_setting_agent = Agent(

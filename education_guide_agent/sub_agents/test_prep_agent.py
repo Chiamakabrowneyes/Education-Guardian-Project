@@ -13,6 +13,10 @@ from ..utils.state_utils import (
     get_application_readiness,
     update_interaction_history
 )
+import google.adk as adk
+import os
+
+adk.configure(api_key=os.getenv("api_key"))
 
 def analyze_test_requirements(tool_context) -> Dict[str, Any]:
     """

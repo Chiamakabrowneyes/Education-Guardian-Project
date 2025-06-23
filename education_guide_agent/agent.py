@@ -22,7 +22,10 @@ from .sub_agents.goal_setting_agent import goal_setting_agent
 # from .sub_agents.extracurricular_coach_agent import extracurricular_coach_agent
 # from .sub_agents.essay_mentor_agent import essay_mentor_agent
 # from .sub_agents.university_info_agent import university_info_agent
+import google.adk as adk
+import os
 
+adk.configure(api_key=os.getenv("api_key"))
 root_agent = Agent(
     name="education_guide_agent",
     model="gemini-2.0-flash",

@@ -14,7 +14,10 @@ from ..utils.state_utils import (
     get_extracurriculars,
     update_interaction_history
 )
+import google.adk as adk
+import os
 
+adk.configure(api_key=os.getenv("api_key"))
 def analyze_recommendation_needs(tool_context) -> Dict[str, Any]:
     """
     Analyze recommendation letter requirements based on user profile.
